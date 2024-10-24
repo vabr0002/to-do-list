@@ -50,7 +50,7 @@ function renderTasks() {
 
     // Hvis antal er større end 2, vis antal i span'en
     if (task.quantity > 2) {
-      taskTextSpan.textContent += ` (Antal: ${task.quantity})`;
+      taskTextSpan.textContent += ` (${task.quantity})`;
     }
 
     li.appendChild(taskTextSpan); // Tilføj span til li-elementet
