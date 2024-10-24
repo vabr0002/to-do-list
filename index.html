@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Min ToDo App</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Tilføj ny opgave" required>
+            <input type="number" id="quantity-input" placeholder="Antal" min="1">
+            <button type="submit" class="add-task">Tilføj Opgave</button>
+        </form>
+        <h2>Aktive Opgaver</h2>
+        <ul id="todo-list">
+            <!-- Opgaver tilføjes her -->
+        </ul>
+        <h2>Færdige Opgaver</h2>
+        <ul id="done-list">
+            <!-- Færdige opgaver tilføjes her -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

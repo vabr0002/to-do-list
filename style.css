@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Gør li til en flex-container */
+li {
+  display: flex;
+  justify-content: space-between; /* Fordel pladsen jævnt mellem tekst og knapper */
+  align-items: center; /* Centrér knapperne vertikalt i midten */
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+li span {
+  flex-grow: 1; /* Sørg for, at teksten optager al ledig plads */
+}
+
+li.done {
+  text-decoration: none; /* Fjern streg over teksten i færdige opgaver */
+  background-color: #d4edda; /* Baggrund for færdige opgaver */
+}
+
+/* Stil knapper i færdige opgaver */
+.done button {
+  background-color: #ff4d4d; /* Rød farve til knapperne i færdige opgaver */
+}
+
+.done button:hover {
+  background-color: #e60000; /* Mørkere rød på hover */
+}
+
+/* Stil knapper */
+li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #218838;
+}
